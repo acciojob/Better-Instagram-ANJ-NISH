@@ -14,9 +14,9 @@ function drop(ev)
 	let ele1=document.getElementById(data);
 	let ele2=document.getElementById(ev.target.id);
 
-    let img1=ele1.style.backgroundImage;
-	let img2=ele2.style.backgroundImage;
+    let img1=ele1.style.backgroundImage.slice(5,-2);
+	let img2=ele2.style.backgroundImage.slice(5,-2);
 
-	ele1.style.backgroundImage=img2;
-	ele2.style.backgroundImage=img1;
+	ele1.style.backgroundImage=`url(${img2})`;
+	ele2.style.backgroundImage=`url(${img1})`;
 }
