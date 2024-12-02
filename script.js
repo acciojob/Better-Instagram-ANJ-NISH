@@ -15,8 +15,8 @@ function drop(ev)
 	let ele2=document.getElementById(ev.target.id);
 
     let img1=ele1.style.backgroundImage;
-	let img2=ele2.style.backgorundImage;
+	let img2=ele2.style.backgroundImage;
 
 	ele1.style.backgroundImage=img2;
-	ele2.style.backgorundImage=img1;
+	ele2.style.backgroundImage=img1;
 }
